@@ -2,10 +2,10 @@
 
 /*
 
-    Project V1: Basic HTML and CSS
+    Project V4: Basic HTML and CSS
     Henery Hardware - website
     Author: Matthew Henery
-    Date: 2/5/19
+    Date: 3/12/19
     Filename: styles.css
 */
 /* Set HTML style*/
@@ -138,22 +138,53 @@ padding: 12px 0px;
 div#mainMenu ul li ul li a:hover {
 background-color: hsl(21, 100%, 50%);
 }   
-/*M4LO3 Demonstrate the use of rounded corners for borders (CSS)
-Rounding the corners of my search box*/
 .search-box {
     position: absolute;
-    margin-top: 3.5%;
-    margin-left: 70%;
+    top: 9.7%;
+    left:70%;
     transform: translate(-50%, -50%);
     background: hsl(223, 99%, 49%);
-    height: 65px;
+    height: 40px;
     border-radius: 40px;
     padding: 10px;
 }
-/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)  
 
-Text decoration set to none
-*/
+.search-box:hover > .search-txt {
+    width: 120px;
+    padding: 0 6px;  
+}
+
+.search-box:hover > .search-btn {
+    background: white;
+}
+
+.search-btn {
+    color: hsl(21, 100%, 50%);
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(223, 99%, 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+/* M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML).  Transitioning the search box to go from a simple search logo, to a box saying "type to search" */
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
 /* Horizontal Nav*/
 .horizontal li {
     display: block;
@@ -164,7 +195,7 @@ Text decoration set to none
     list-style-type: none;
     margin-left: 5%;
     text-decoration: none;
-}
+    }
 .horizontal li a:link, nav > ul > li > a:visited {
     color: black;
     text-decoration: none;
@@ -345,7 +376,7 @@ body > footer {
         background: hsl(21, 100%, 50%);
         color: black;
     }
-}
+
 
 
 /*Mobile Devices: 0 - 480 pixels*/
@@ -374,5 +405,49 @@ body > footer {
 }
 }
 
+/* Form Layout Styles */
 
+label {
+    display: block;
+    float: left;
+    clear: left;
+    padding-left: 9.3%;
+    width: 200px;
+}
 
+input, select, textarea {
+    display: block;
+    float: left;
+    margin: 5px 0px;
+    width: 200px;
+}
+
+textarea {
+    height: 100px;  
+    width: 300px;
+}
+
+form p {
+    clear: left;
+    text-align: center;
+    padding-top: 40px;
+}
+
+input[type='submit'] {
+    background-color: hsl(223, 99%, 49%);
+    color: hsl(21, 100%, 50%);
+    border-radius: 30px;
+    float: none;
+    display: inline;
+    font-size: 1.3em;
+    height: 40px;
+    width: 150px;
+}
+
+video {
+    box-shadow: rgb(51, 51, 51) 10px 10px 20px;
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+}
+}
