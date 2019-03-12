@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+    Project V1: Basic HTML and CSS
+    Henery Hardware - website
+    Author: Matthew Henery
+    Date: 2/5/19
+    Filename: locations.html
+   -->
+   
+    <title>Locations</title>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <h1 id=shipToStore>Free shipping on all ship to store orders</h1>
+    <div id=mainMenu>
+        <div class= "logo_area">
+            <a href="index.html"><img src="website_logo.png" alt="Website Logo"></a>
+        </div>
+        <ul>
+            <li><a href="#"><i class="fas fa-grip-lines"></i> Shop By Department</a>
+                <ul>
+                    <li><a href="departments.html">Automotive</a></li>
+                    <li><a href="departments.html">Building Materials</a></li>
+                    <li><a href="departments.html">Cleaning Supplies</a></li>
+                    <li><a href="departments.html">Doors & Windows</a></li>
+                    <li><a href="departments.html">Electrical</a></li>
+                    <li><a href="departments.html">Farm & Ranch</a></li>
+                    <li><a href="departments.html">Hand Tools</a></li>
+                    <li><a href="departments.html">Hardware</a></li>
+                    <li><a href="departments.html">Heating, Ventilation & Air Conditioning</a></li>
+                    <li><a href="departments.html">Housewares</a></li>
+                    <li><a href="departments.html">Lawn & Garden</a></li>
+                    <li><a href="departments.html">Outdoor Living</a></li>
+                    <li><a href="departments.html">Paint & Painting Supplies</a></li>
+                    <li><a href="departments.html">Plumbing Supplies</a></li>
+                    <li><a href="departments.html">Power Tools & Accessories</a></li>
+                    <li><a href="departments.html">Storage & Organization</a></li>
+                    <li><a href="departments.html">Shop All Departments</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-box">
+            <input class="search-txt" type="text" name="search" placeholder="Type to search">
+            <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="shopping_cart">
+            <a href="shopping_cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <h2 id=my_account>
+        <a href="#">My Account</a>
+    </h2>
+    </div>
+    
+    <nav class="horizontal">
+      <ul class="row">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="about.html">About HH V2</a></li>
+         </ul>
+    </nav>
+    <h1 class="page-headers">Our Locations</h1>
+</header>
+<!--M4LO7 Demonstrate the use of image maps, including determining x and y values (HTML)  
+The use of image maps on this image
+
+I wanted the ability to click on roughly the entire image and have it take you directly to the contact us page, so that the customer can click on their "location" and it'll give them the ability to call that store.
+-->
+    <map name="locations_map">
+        <area shape="rect" coords="10,10,900,350" href="contact_us.html" alt="Contact Our Locations">       
+    </map>
+<!--M4LO8 Demonstrate the use of transformations for 2D or 3D images (CSS, note one of these two in your CSS and explain its impact on the HTML)
+The use of 3D transofrmation on this image -->
+   <figure>
+       <img class="stores" src="stores.png" alt="locations" usemap="#locations_map"/>
+    </figure>
+    
+    <p class="locations-text">Although it lists five locations, we only have four.  Port Townsend, Kingston, Bremerton, and Anacortes.  Recently my parents sold their 50% ownership of the Quilcene store to my Uncle and Aunt, and until March, we will not have new store art.</p>
+    
+    <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1gwC37ERLKpFHivKc7JwcnWKedh6fuFcE" width="640" height="480"></iframe>
+    
+<footer>
+    Henery Hardware &#8226; Serving Others Like We Would Like To Be Served &#8226; Now In Four Locations
+</footer>
+</body>
+</html> 
